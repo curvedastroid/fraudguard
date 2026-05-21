@@ -114,7 +114,18 @@ def load_metrics(model_key: str) -> dict:
     p = _METRICS_FILES.get(model_key)
     if p and p.exists():
         with open(str(p)) as f:
-            return json.load(f)
+            raw = json.load(f)
+        fallback = DEMO_METRICS.get(model_key, {})
+        return {
+            **fallback,
+            **raw,
+            "auc": raw.get("auc", raw.get("auc_roc", fallback.get("auc", 0))),
+            "params": raw.get("params", raw.get("n_params", fallback.get("params", 0))),
+            "train_time_s": raw.get(
+                "train_time_s",
+                round(raw.get("train_time_min", fallback.get("train_time_s", 0) / 60) * 60),
+            ),
+        }
     return DEMO_METRICS.get(model_key, {})
 
 

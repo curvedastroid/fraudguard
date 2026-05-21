@@ -2,8 +2,7 @@
 data/raw/
 data/processed/*.npy
 
-# Model weights — use Git LFS or share via Drive
-models/**/*.keras
+# Small trained model files are committed for the hosted Streamlit demo.
 
 # Python
 __pycache__/
