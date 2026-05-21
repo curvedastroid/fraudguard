@@ -4,9 +4,8 @@ services:
     runtime: python
     region: oregon
     plan: free
-    rootDir: streamlit
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
-    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    startCommand: streamlit run streamlit/app.py --server.port $PORT --server.address 0.0.0.0
     healthCheckPath: /_stcore/health
     envVars:
       - key: PYTHON_VERSION
