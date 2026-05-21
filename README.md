@@ -11,7 +11,7 @@ Use Python 3.10 to match the Render deployment environment.
 python -m venv .venv
 .venv\Scripts\activate
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r streamlit/requirements.txt
 streamlit run streamlit/app.py
 ```
 
@@ -26,7 +26,7 @@ This repository includes a `render.yaml` Blueprint. To deploy:
 5. Keep the default Blueprint path: `render.yaml`.
 6. Deploy the detected `fraudguard-app` service.
 
-Render will build with:
+Render is scoped to the `streamlit/` folder and will build with:
 
 ```bash
 pip install --upgrade pip && pip install -r requirements.txt
@@ -35,7 +35,7 @@ pip install --upgrade pip && pip install -r requirements.txt
 and start the app with:
 
 ```bash
-streamlit run streamlit/app.py --server.port $PORT --server.address 0.0.0.0
+streamlit run app.py --server.port $PORT --server.address 0.0.0.0
 ```
 
 ## Repository Notes
