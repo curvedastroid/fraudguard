@@ -15,6 +15,12 @@ pip install -r requirements.txt
 streamlit run streamlit/app.py
 ```
 
+If your host expects an app at the repository root, this also works:
+
+```bash
+streamlit run app.py
+```
+
 ## Render Deployment
 
 This repository includes a `render.yaml` Blueprint. To deploy:
@@ -38,6 +44,9 @@ and start the app with:
 ```bash
 streamlit run streamlit/app.py --server.port $PORT --server.address 0.0.0.0
 ```
+
+The repository also includes a root-level `app.py` compatibility wrapper, so
+`streamlit run app.py --server.port $PORT --server.address 0.0.0.0` is valid too.
 
 ## Repository Notes
 
