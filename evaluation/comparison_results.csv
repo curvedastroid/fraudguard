@@ -1,0 +1,4 @@
+Rank,Model,AUC-ROC,F1 (fraud),Precision,Recall,Parameters,Train time (min)
+1,GRU,0.8323,0.1788,0.1013,0.7619,25377,49.7
+2,LSTM,0.8305,0.1774,0.1005,0.755,33313,47.3
+3,BiLSTM,0.8182,0.1687,0.0952,0.7414,83009,50.2

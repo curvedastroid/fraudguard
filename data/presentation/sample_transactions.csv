@@ -1,0 +1,26 @@
+TransactionID,TransactionAmt,delta_t_seconds,D1_days,C1_count,C2_count,M1_match,M3_match,ProductCD,card_type,TransactionAmt_sequence_avg,isFraud,fraud_label
+3000000,77.48,7200,8,1,1,0,0,C,discover,80.34,0,Legitimate
+3000001,128.48,3600,7,2,2,0,1,S,mastercard,74.87,0,Legitimate
+3000002,121.62,172800,3,2,1,1,1,S,visa,87.97,0,Legitimate
+3000003,183.35,90,0,5,4,0,1,W,american express,101.75,1,FRAUD
+3000004,171.82,7200,20,2,1,0,0,W,visa,104.02,0,Legitimate
+3000005,125.62,86400,30,1,1,0,0,C,visa,107.69,0,Legitimate
+3000006,31.36,86400,29,1,1,0,1,C,discover,43.6,0,Legitimate
+3000007,235.59,300,0,3,3,0,1,W,visa,127.8,1,FRAUD
+3000008,58.91,7200,5,2,1,1,1,H,american express,31.85,0,Legitimate
+3000009,149.44,7200,17,1,1,0,0,C,mastercard,127.38,0,Legitimate
+3000010,65.92,86400,14,2,2,0,0,W,american express,83.45,0,Legitimate
+3000011,355.38,300,1,4,2,1,0,C,mastercard,467.96,1,FRAUD
+3000012,130.39,7200,10,2,2,0,1,S,american express,63.06,0,Legitimate
+3000013,58.4,14400,18,2,1,1,1,C,discover,91.21,0,Legitimate
+3000014,543.58,90,1,5,5,1,0,S,american express,796.33,1,FRAUD
+3000015,67.41,14400,28,2,1,0,1,S,mastercard,59.99,0,Legitimate
+3000016,156.22,86400,4,1,1,0,1,H,discover,237.41,0,Legitimate
+3000017,53.39,86400,18,2,2,0,0,W,american express,26.2,0,Legitimate
+3000018,194.06,45,1,6,3,1,0,W,discover,170.41,1,FRAUD
+3000019,37.63,86400,5,2,1,1,1,S,mastercard,31.3,0,Legitimate
+3000020,43.71,86400,6,2,2,1,0,W,mastercard,69.79,0,Legitimate
+3000021,410.2,45,1,5,1,1,0,R,american express,475.92,1,FRAUD
+3000022,108.27,86400,6,2,1,0,1,W,visa,87.79,0,Legitimate
+3000023,281.18,120,1,4,1,1,0,H,visa,276.0,1,FRAUD
+3000024,54.92,14400,18,1,1,0,1,R,visa,70.96,0,Legitimate

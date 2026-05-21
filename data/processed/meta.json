@@ -1,0 +1,25 @@
+{
+  "seq_len": 5,
+  "features": [
+    "TransactionAmt",
+    "delta_t",
+    "D1",
+    "C1",
+    "C2",
+    "C3",
+    "C5",
+    "M1",
+    "M3",
+    "M6",
+    "V12",
+    "V20",
+    "V37",
+    "addr1_norm",
+    "card_type_enc"
+  ],
+  "n_features": 15,
+  "train_samples": 348676,
+  "val_samples": 74716,
+  "test_samples": 74717,
+  "fraud_rate_train": 0.03643497114799986
+}
